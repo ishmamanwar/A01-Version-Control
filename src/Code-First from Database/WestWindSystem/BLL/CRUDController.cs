@@ -23,6 +23,39 @@ namespace WestWindSystem.BLL
         }
         #endregion
 
+        #region Suppliers CRUD
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public List<Supplier> ListSuppliers()
+        {
+            using (var context = new WestWindContext())
+            {
+                return context.Suppliers.ToList();
+            }
+        }
+        #endregion
+
+        #region Categories CRUD
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public List<Category> ListCategories()
+        {
+            using (var context = new WestWindContext())
+            {
+                return context.Categories.ToList();
+            }
+        }
+        #endregion
+
+        #region Addresses CRUD
+        [DataObjectMethod(DataObjectMethodType.Select)]
+        public List<Address> ListAddresses()
+        {
+            using (var context = new WestWindContext())
+            {
+                return context.Addresses.ToList()
+            }
+        }
+        #endregion
+
         //HW:
         // 1. List Suppliers
         // 2. Categories
