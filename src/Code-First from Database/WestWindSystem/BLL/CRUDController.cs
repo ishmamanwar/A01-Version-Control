@@ -51,7 +51,7 @@ namespace WestWindSystem.BLL
         {
             using (var context = new WestWindContext())
             {
-                return context.Addresses.ToList()
+                return context.Addresses.ToList();
             }
         }
         #endregion
